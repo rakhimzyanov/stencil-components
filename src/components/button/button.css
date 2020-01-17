@@ -1,0 +1,8 @@
+:host {
+  display: block;
+}
+
+.my-btn {
+  background-color: dimgray;
+  color: tomato;
+}

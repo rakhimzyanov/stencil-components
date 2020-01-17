@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/my-super-compoments-yee.esm.js"></script>
+  <script nomodule src="/build/my-super-compoments-yee.js"></script>
+
+  <!-- <link rel="stylesheet" type="text/css" href="global/style.css"> -->
+</head>
+<body>
+
+  <style>
+    b {
+      color: aliceblue;
+      font-size: 30px;
+    }
+    my-modal::shadow header {
+      color: red !important;
+    }
+  </style>
+
+  <shared-button name="my super button"><b>22</b></shared-button>
+
+
+  <my-modal>helo 1</my-modal>
+
+  <my-modal>helo 2</my-modal>
+
+  <script>
+
+    document.querySelector('shared-button').addEventListener('clickBtn', event => {
+      // console.log(event);
+      document.querySelector('my-modal').open = true;
+    });
+
+    // document.querySelector('my-modal').open = true;
+
+  </script>
+
+</body>
+</html>
